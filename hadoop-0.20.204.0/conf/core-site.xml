@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+	<property>
+		<name>fs.adamfs.impl</name>
+		<value>org.apache.hadoop.fs.adamfs.AdamFileSystem</value>
+		<description>AdamFS</description>
+	</property>
+
+	<property>
+		<name>fs.default.name</name>
+		<value>adamfs://localhost:9999</value>
+	</property>
+
+    <!--<property>
+        <name>io.file.buffer.size</name>
+        <value>4096000</value>
+    </property>-->
+	
+	<property>
+	  <name>webinterface.private.actions</name>
+  	<value>true</value>
+	</property>
+</configuration>
